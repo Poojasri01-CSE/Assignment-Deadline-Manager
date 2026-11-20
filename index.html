@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Assignment Deadline Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Assignment Manager</h1>
+        <p>Manage your assignments and deadlines</p>
+
+        <div class="form">
+            <input type="text" id="assignment"
+                   placeholder="Assignment Name">
+
+            <input type="text" id="subject"
+                   placeholder="Subject">
+
+            <input type="date" id="deadline">
+
+            <button onclick="addAssignment()">
+                Add Assignment
+            </button>
+        </div>
+
+        <div class="stats">
+            <div> Total: <span id="total">0</span></div>
+            <div> Pending: <span id="pending">0</span></div>
+            <div> Completed: <span id="completed">0</span></div>
+        </div>
+
+        <h2>My Assignments</h2>
+
+        <div id="assignmentList"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
